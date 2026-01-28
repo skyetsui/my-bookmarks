@@ -1,0 +1,30 @@
+name: Link Checker
+
+on:
+  # 1. Trigger on Pull Requests to catch errors before merging
+  pull_request:
+    branches: [main]
+
+  # 2. Trigger on every Push to the main branch
+  push:
+    branches: [main]
+
+  # 3. Keep the Sunday schedule for long-term monitoring
+  schedule:
+    - cron: '0 0 * * 0' 
+
+  # 4. Keep the manual button just in case
+  workflow_dispatch: 
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress --retry-wait-time 10 --max-retries 5 README.md # wait 10 seconds and try up to 5 times per link
+          fail: true # show a red X if a link is broken
