@@ -26,5 +26,5 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress --retry-wait 5 --max-retries 3 README.md # This tells the checker to wait 5 seconds and try up to 3 times per link
+          args: --verbose --no-progress --retry-wait-time 5 --max-retries 3 README.md # This tells the checker to wait 5 seconds and try up to 3 times per link
           fail: true # This makes the "Action" tab show a red X if a link is broken
