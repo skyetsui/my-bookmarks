@@ -1,9 +1,20 @@
 name: Link Checker
 
 on:
+  # 1. Trigger on Pull Requests to catch errors before merging
+  pull_request:
+    branches: [main]
+
+  # 2. Trigger on every Push to the main branch
+  push:
+    branches: [main]
+
+  # 3. Keep the Sunday schedule for long-term monitoring
   schedule:
-    - cron: '0 0 * * 0' # Runs every Sunday at midnight
-  workflow_dispatch: # Allows you to run it manually whenever you want
+    - cron: '0 0 * * 0' 
+
+  # 4. Keep the manual button just in case
+  workflow_dispatch: 
 
 jobs:
   check-links:
