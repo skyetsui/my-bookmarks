@@ -29,6 +29,10 @@
 * [JavaDoc 8](https://docs.oracle.com/javase/8/docs/api/)
 * [Jinja Documentation](https://jinja.palletsprojects.com/en/stable/templates/)
 
+### M
+
+* [Microsoft Word Keyboard shortcuts](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2)
+
 ### P
 * [PHP Live Regex](https://www.phpliveregex.com/)
 * [Postgres Explain Query Plan](https://explain.dalibo.com/)
