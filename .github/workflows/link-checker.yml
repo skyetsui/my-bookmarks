@@ -28,3 +28,4 @@ jobs:
         with:
           args: --verbose --no-progress --retry-wait-time 30 --max-retries 10 README.md # wait 30 seconds and try up to 10 times per link
           fail: true # show a red X if a link is broken
+          debug: true # enable debug output for troubleshooting
