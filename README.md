@@ -21,6 +21,9 @@
 * [Cron expression generator](https://crontab.cronhub.io/)
 * [Cron Expression Generator and Describer](https://www.freeformatter.com/cron-expression-generator-quartz.html)
 
+### E
+* [Emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
 ### G
 * [GNU make](http://www.gnu.org/software/make/manual/make.html)
 
