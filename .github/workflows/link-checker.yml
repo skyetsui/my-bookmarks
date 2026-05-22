@@ -9,9 +9,9 @@ on:
   push:
     branches: [main]
 
-  # 3. Keep the Sunday schedule for long-term monitoring
+  # 3. Run at 20:00 UTC on Friday for long-term monitoring
   schedule:
-    - cron: '0 0 * * 0' 
+    - cron: '0 20 * * 5' 
 
   # 4. Keep the manual button just in case
   workflow_dispatch: 
